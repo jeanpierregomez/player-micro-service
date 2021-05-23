@@ -19,7 +19,7 @@ app.use(
 	})
 );
 
-app.set("port", process.env.PORT || 4000);
+app.set("port", process.env.PORT || 4001);
 
 app.use(router);
 
