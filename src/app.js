@@ -8,7 +8,7 @@ app.use(
 	})
 );
 
-app.set("port", process.env.PORT);
+app.set("port", process.env.PORT || 4000);
 
 app.listen(app.get("port"), () => {
 	console.log(`listen on port ${app.get("port")}`);
