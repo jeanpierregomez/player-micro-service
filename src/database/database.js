@@ -8,9 +8,13 @@ const sequelize = new Sequelize("player-db", "root", "", {
 
 exports.sequelize = sequelize;
 
+const Jugador = require("./models/Jugador");
+
 (async () => {
 	await sequelize.sync();
 	console.log("database connected");
 })();
 
-exports.models = {};
+exports.models = {
+	Jugador,
+};
