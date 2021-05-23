@@ -9,6 +9,9 @@ const Jugador = sequelize.define(
             primaryKey: true,
             autoIncrement: true,
         },
+        id_equipo: {
+            type: DataTypes.INTEGER,
+        },
         documento: {
             type: DataTypes.STRING(20),
             allowNull: false,
@@ -50,8 +53,28 @@ const Jugador = sequelize.define(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        indumentaria: {
-            type: DataTypes.STRING(25),
+        talla_sudadera: {
+            type: DataTypes.STRING(3),
+            allowNull: false,
+        },
+        talla_camiseta: {
+            type: DataTypes.STRING(3),
+            allowNull: false,
+        },
+        talla_pantaloneta: {
+            type: DataTypes.STRING(3),
+            allowNull: false,
+        },
+        talla_zapato: {
+            type: DataTypes.STRING(4),
+            allowNull: false,
+        },
+        tipo_sangre: {
+            type: DataTypes.STRING(15),
+            allowNull: false,
+        },
+        nivel_hemoglobina: {
+            type: DataTypes.STRING(3),
             allowNull: false,
         },
     },
